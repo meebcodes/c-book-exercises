@@ -1,0 +1,5 @@
+# Demo files
+demo*
+
+# Object files
+*.o
