@@ -1,7 +1,7 @@
 /* Copy input to output, replacing:
 *  tabs -> \t
 *  backspaces -> \b
-*  backlashes -> \\
+*  backslashes -> \\
 */
 
 #include <stdio.h>
