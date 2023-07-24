@@ -1,23 +1,23 @@
-// Celsius to Fahrenheit table with header.
-
 #include <stdio.h>
 
-int main(int argc, char* argv[]){
-    float fahr, celsius;
-    int lower, upper, step;
+#define LOWER 0 /* lower limit of table */
+#define UPPER 300 /* upper limit of table */
+#define STEP 20 /* step size */
 
-    lower = 0;      // lower limit of temp table
-    upper = 300;    // upper limit of temp table
-    step = 20;      // step size
+/* print Fahrenheit-Celsius table 
+    for fahr = 0, 20, ..., 300 */
 
-    // print header
-    printf("--------------------------\n");
-    printf("Celsius\t\tFahrenheit\n");
-    printf("--------------------------\n");
-    
-    // print table
-    for(celsius = lower; celsius <= upper; celsius += step){
-        fahr = (9.0/5.0) * celsius + 32.0;
-        printf("%3.0f\t\t%6.1f\n", celsius, fahr);
+int main() {
+
+    int celsius;
+    float fahr;
+
+    printf(" CELSIUS\tFAHRENHEIT\n");
+
+    for (celsius = LOWER; celsius <= UPPER; celsius += STEP) {
+        // calculate Celsius conversion
+        fahr = (9.0 / 5.0) * celsius + 32;
+        // print table
+        printf("   %3d\t\t%6.1f\n", celsius, fahr);
     }
 }
