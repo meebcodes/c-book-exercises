@@ -3,3 +3,7 @@ demo*
 
 # Object files
 *.o
+*.out
+
+# VSCode stuff
+.vscode/
