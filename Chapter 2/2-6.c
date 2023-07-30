@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <ctype.h>
-#include <stdlib.h>
 
 unsigned int set_bits(unsigned int x, unsigned int p, unsigned int n, unsigned int y);
 unsigned int get_bits(unsigned int x, unsigned int p, unsigned int n);
@@ -19,7 +18,7 @@ int main(void) {
     return 0;
 }
 
-// assumes p > n
+// assumes p >= n-1
 unsigned int set_bits(unsigned int x, unsigned int p, unsigned int n, unsigned int y){
     // make y into bitmask containing only the bits we want to set to
     y = get_bits(y, n-1, n) << (p+1-n);
