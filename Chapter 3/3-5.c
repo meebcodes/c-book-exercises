@@ -7,7 +7,7 @@ void itob(int n, char s[], int b);
 void reverse(char str[], int len);
 
 int main(void){
-    int a = 526;
+    int a = 124789;
     int b = INT_MIN;
 
     char a_str[50] = "";
