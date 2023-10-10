@@ -48,7 +48,7 @@ int getint(int *pn) {
         *pn = 10 * *pn + (c - '0');
     *pn *= sign;
 
-    // if we get EOF
+    // if we don't get EOF
     if (c != EOF)
         ungetch(c);
     
